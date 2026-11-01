@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://appalthouse-a11y.github.io/sitemap.xml
