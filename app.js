@@ -1,0 +1,7 @@
+(function(){var P='gid';
+document.querySelectorAll('.'+P+'-check').forEach(function(box,n){var bs=box.querySelectorAll('input');var k=P+':'+location.pathname+':'+n;var s=(localStorage.getItem(k)||'').split('');
+var c=document.createElement('p');c.className='cnt';box.appendChild(c);function f(){var d=0,b='';bs.forEach(function(x){if(x.checked)d++;b+=x.checked?'1':'0'});c.textContent='Выполнено: '+d+' / '+bs.length;try{localStorage.setItem(k,b)}catch(e){}}
+bs.forEach(function(x,i){x.checked=s[i]==='1';x.addEventListener('change',f)});f()});
+var bars=document.querySelectorAll('.'+P+'-bar i');var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.v+'%';io.unobserve(e.target)}})},{threshold:.3}):null;
+bars.forEach(function(b){io?io.observe(b):b.style.width=b.dataset.v+'%'});
+var links=[].slice.call(document.querySelectorAll('.'+P+'-toc a'));if(links.length){window.addEventListener('scroll',function(){var cur=null;links.forEach(function(a){var h=document.getElementById(a.getAttribute('href').slice(1));if(h&&h.getBoundingClientRect().top<120)cur=a});links.forEach(function(a){a.classList.toggle('on',a===cur)})},{passive:true})}})();
