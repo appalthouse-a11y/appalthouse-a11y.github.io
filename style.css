@@ -1,0 +1,8 @@
+:root{--a:#1f6feb}*{box-sizing:border-box}body{margin:0;font:17px/1.65 -apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1d1d1f;background:#fafaf8}
+header{background:#fff;border-bottom:3px solid var(--a)}header .w,main,footer .w{max-width:780px;margin:0 auto;padding:0 18px}
+header .w{padding-top:18px;padding-bottom:14px}.logo{font-weight:800;font-size:22px;color:#1d1d1f;text-decoration:none}.tag{color:#666;font-size:14px;margin:2px 0 0}
+main{padding-top:26px;padding-bottom:40px}h1{font-size:30px;line-height:1.25;margin:0 0 14px}h2{font-size:22px;margin:30px 0 10px}h3{font-size:18px;margin:22px 0 8px}
+a{color:var(--a)}.lead{font-size:18px;color:#333}.meta{color:#777;font-size:14px;margin-bottom:22px}table{border-collapse:collapse;width:100%;font-size:15px}td,th{border:1px solid #ddd;padding:8px;text-align:left}
+.cards{list-style:none;padding:0}.cards li{background:#fff;border:1px solid #e6e6e2;border-left:4px solid var(--a);border-radius:8px;padding:14px 16px;margin:0 0 12px}.cards a{font-weight:700;text-decoration:none}.cards p{margin:6px 0 0;color:#555;font-size:15px}
+.rel{background:#fff;border:1px solid #e6e6e2;border-radius:8px;padding:6px 18px 10px;margin-top:34px}footer{border-top:1px solid #e6e6e2;color:#888;font-size:13px;padding:18px 0}
+@media(max-width:600px){h1{font-size:25px}}
